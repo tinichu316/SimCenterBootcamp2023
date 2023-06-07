@@ -10,7 +10,7 @@ Square::~Square() {
 
 //constructor
 Square::Square(double w, string color)
-  :ColoredShape(color), height(d)
+  :ColoredShape(color), width(w)
 {
   numSelf++;
 }

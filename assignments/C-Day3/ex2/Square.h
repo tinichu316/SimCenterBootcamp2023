@@ -1,20 +1,21 @@
-#ifndef _RECTANGLE
-#define _RECTANGLE
+#ifndef _SQUARE
+#define _SQUARE
 
 #include "ColoredShape.h"
 
-class Rectangle: public ColoredShape {
- public:
-  Rectangle(double w, double h, string color);
-  ~Rectangle();
+// specify what methods and arguments are in the class
+class Square: public ColoredShape {
+ public: //public methods
+  Square(double w, string color); //constructor
+  ~Square(); //destructor
   double getArea(void);
   void printArea(std::ostream &s);  
 
  protected:
 
- private:
+ private: //properties
   double width, height;
-  static int numRect;
+  static int numSelf;
 };
 
-#endif // _RECTANGLE
+#endif // _Square
